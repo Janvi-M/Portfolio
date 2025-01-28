@@ -1,196 +1,75 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<!--/ /---- Put your name in the title of the page ----/ /-->
-	<title>Put Your Name Here</title>
-	
-	<!--/ /-------- Normalize CSS --------/ /-->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-	
-	<!--/ /-------- Google Fonts --------/ /-->
-	<!-- Add a link to google fonts here if you want them -->
-	
-	<!--/ /-------- Font Awesome --------/ /-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-	<!--/ /-------- Your Styles --------/ /-->
-	<link href="styles.css" rel="stylesheet">
-
-	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
-	<meta description="A short description for your site...">
-
-	<!--/ /-------- Needed For Mobile Devices --------/ /-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janvi Munshi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-	
-    <!-- ------------------------------------------------------
-    The site is designed to be mobile first. The wrapper elements
-	are in place for when you get to desktop size to contain the 
-	content.
-    ------------------------------------------------------- -->
-    
-	<header class="primary">
-        <div class="wrapper">
-            
-			<div class="logo-container">
-				<h1>Your<br>Name<br>Portfolio</h1>
 
-				<!-- ------------------------------------------------------
-				Note that the image of the logo is linked to the home page.
-				------------------------------------------------------- -->
-				<a href="index.html"><img src="https://dummyimage.com/175/c4c4c4/fff&text=logo" alt="logo image" id="logo"></a>
-			</div>
-            
-            
-			<!-- ------------------------------------------------------
-            The navigation here is linking to the sections further down
-            the page.
-            ------------------------------------------------------- -->
-			<nav id="mainnav">
-            	<ul>
-                	<li><a href="#work">Work</a></li>
-                    <li><a href="#about-contact">About</a></li>
-                    <li><a href="#about-contact">Contact</a></li>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Janvi Munshi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
                 </ul>
             </nav>
-            
         </div>
-        
     </header>
-    
-    <!-- ------------------------------------------------------
-    This is the work section, which has two parts: the featured
-	section and the projects section.
-    ------------------------------------------------------- -->
-    
-    <section id="work">
-   		<div class="wrapper">
-        	<h2>Check Out My Best Projects</h2>
-        	<section class="featured">
-                <article>
-                	<!-- ------------------------------------------------------
-                    Link the image below to the detail page for this project.
-                    Use the page.html file to make that page. Also link the 
-                    anchor tag in the paragraph below to the same page.
-                    ------------------------------------------------------- -->
-                	<a href="#"><img src="https://dummyimage.com/510x300/c4c4c4/fff&text=Featured+Project" alt="image"></a>
-                </article>
-                
-                <article>
-                	<h3>Title of Project</h3>
-                    <h4>Challenge Statement</h4>
-                    <p>Before they sold out single-origin coffee fingerstache sartorial freegan master cleanse. Sartorial blog fap, shoreditch scenester tacos poutine. Bespoke brunch viral listicle, keffiyeh celiac paleo organic scenester next level cliche put a bird on it cardigan. Forage kombucha pitchfork literally. Art party narwhal food truck selfies, XOXO leggings distillery four loko fap. An additional sentence.</p> <p><a href="#">Find out how I solved this problem</a></p> 
-                </article>
-            </section> <!-- end row -->
-            
-            
-            <!-- ------------------------------------------------------
-            The projects section is for additional projects. I put four in
-			here, but it could be more, or less. You just have to pay
-			attention to how they wrap, and how many you want per row.
-            
-            Note that each image should be linked to the page with more
-            detailed information about that project. You can use a copy of
-            page.html to create those pages.
-            ------------------------------------------------------- -->
-            
-            <section class="projects">
-            
-            	<article>
-                	<h3>Project Title</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="image"></a>
-                    <p><strong>Role:</strong> Designer</p>
-                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
-                </article>
-                
-                <article>
-                	<h3>Project Title</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="image"></a>
-                    <p><strong>Role:</strong> Designer</p>
-                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
-                </article>
-                
-                <article>
-                	<h3>Project Title</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="image"></a>
-                    <p><strong>Role:</strong> Designer</p>
-                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
-                </article>
-				
-				<article>
-                	<h3>Project Title</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="image"></a>
-                    <p><strong>Role:</strong> Designer</p>
-                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
-                </article>
-            
-            </section><!-- end row -->
-            
-        </div> <!-- end work wrapper -->
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I'm an aspiring computer engineer specializing in AI/ML, Data Analytics, and Software Development.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
     </section>
-    
-    
-    <!-- ------------------------------------------------------
-    This is the about and contact section. The links in the main
-    navigation link to this section. 
-    ------------------------------------------------------- -->
-    
-    <section id="about-contact" class="secondary">
-   		<div class="wrapper">
-        	
-			<div class="profile-photo">
-            	<img src="http://placehold.it/260?text=Your+Photo" alt="image">
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            
+            <div class="project">
+                <h3>Arduino-Based-Water-Level-and-Turbidity-Monitoring-System</h3>
+                <p>Developed a water level and turbidity monitoring system using Arduino and a breadboard. Includes a buzzer alarm for low water levels and an LCD display for real-time sensor feedback, ensuring comprehensive water monitoring and alerts.</p>
+                <a href="https://github.com/Janvi-M/Arduino-Based-Water-Level-and-Turbidity-Monitoring-System">View Details</a>
             </div>
-			
-            <article>
-				<h2>About Me</h2>
-				<p>Fixie owner, father of 3, fender owner, reclaimed wood collector and javascripter. Acting at the junction of minimalism and intellectual purity to create great work for living breathing human beings. I'm a designer and this is my work.</p>
-				<h3>Skills</h3>
-				<p>I am particularly good at BLAH BLAH and really enjoy BLAH. I am currently learning BLAH and I'm very exited about BLAH BLAH.</p>
-			</article> 
-                
-			<article>
-				<h2>Contact Me!</h2>
-				<p>I am currently looking for opportunities to work on a team at a design shop. Please feel free to contact me by phone, email or through the usual social media channels.</p>
 
-				<!-- ------------------------------------------------------
-				Be sure to encode your email address at this site, so you 
-				don't get spam. http://wbwip.com/wbw/emailencoder.html
-				------------------------------------------------------- -->
+            <div class="project">
+                <h3>Medical-Query-Answering-System-using-LLMs-and-Vector-Databases</h3>
+                <p>A robust system leveraging large language models and FAISS vector databases to answer medical questions by retrieving and generating context-based responses from CSV data.</p>
+                <a href="https://github.com/Janvi-M/Medical-Query-Answering-System-using-LLMs-and-Vector-Databases">View Details</a>
+            </div>
 
-				<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:&#101;&#109;&#097;&#105;&#108;&#064;&#115;&#111;&#109;&#101;&#119;&#104;&#101;&#114;&#101;&#046;&#099;&#111;&#109;">&#101;&#109;&#097;&#105;&#108;&#064;&#115;&#111;&#109;&#101;&#119;&#104;&#101;&#114;&#101;&#046;&#099;&#111;&#109;</a><br>
-				<i class="fa fa-phone" aria-hidden="true"></i> 123-456-7890</p>
-
-				<!-- ------------------------------------------------------
-				You can see here that I have included font-awesome. It is used
-				to create the icons above and below. You can go to the font-awesome
-				website to see the available icons and swap some out.
-				------------------------------------------------------- -->
-
-				<p class="social">
-					<a href="#"><i class="fab fa-facebook"></i></a>
-					<a href="#"><i class="fab fa-linkedin"></i></a> 
-					<a href="#"><i class="fab fa-twitter-square"></i></a>
-				</p>
-			</article>
-                   
+            <div class="project">
+                <h3>Distributed-File-Orchestration-and-Synchronization</h3>
+                <p>This system facilitates secure file operations (upload, download, preview, delete, list) between a client and server over a TCP connection using a custom application-layer protocol. It also includes client authentication for secure access.</p>
+                <a href="https://github.com/Janvi-M/Distributed-File-Orchestration-and-Synchronization/tree/main">View Details</a>
+            </div>
         </div>
     </section>
-    
-    
-    <!-- ------------------------------------------------------
-    The footer section is not doing much on this page. Add more
-    content if necessary.
-    ------------------------------------------------------- -->
-    <footer class="primary">
-    	<div class="wrapper">
-        	<p class="centered">&copy; 2019 all rights reserved</p>
-        </div>
-    </footer>
 
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Janvi Munshi, a computer engineering student with a passion for AI, machine learning, and software development. I enjoy solving problems and building innovative solutions.</p>
+            <h3>Skills</h3>
+            <ul>
+		<li> Machine Intelligence</li>
+		<li>Data Science<li>
+                <li>Web Development</li>
+                <li>Python, C, Java</li>
+                <li>SQL & Database Management</li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
