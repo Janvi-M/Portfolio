@@ -1,8 +1,7 @@
-#portfolio-template
-A basic html/css template for web concentration portfolio 1 students
+# Hey there! 😃  
 
-Download this template and use it to build a simple portfolio website. There are lots of comments in the code to explain what is doing what, plus I have made a google presentation that will walk you through some of the things you need to do. Those slides can be found here:
+I'm **Janvi Munshi**, an aspiring computer engineer with a passion for all things tech. 💻    
 
-https://docs.google.com/presentation/d/1ybdws_K_1xUW_wzs9dlSobAagYgSCbpZaJKJ1cLyp6k/edit?usp=sharing
+Check out my portfolio here:  
 
-Using this template requires a basic understanding of HTML and CSS
+✨ [https://portfolio-eight-omega-61.vercel.app/](https://portfolio-eight-omega-61.vercel.app/)  
