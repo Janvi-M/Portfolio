@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset and Tailwind-inspired base styles */
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-contain-size: ;
+    --tw-contain-layout: ;
+    --tw-contain-paint: ;
+    --tw-contain-style: ;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    color: #dfd9ff; /* Light text */
+    background-color: #0f0529; /* Dark background */
+    color-scheme: dark;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #1e1e1e;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #00bcd4; /* Turquoise Blue */
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #dfd9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4; /* Turquoise Blue */
+}
+
+#hero {
+    background-image: url(/portfolio/assets/herobg-CSqWnoE3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #secondary;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00bcd4; /* Turquoise Blue */
+    color: #0f0529;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 400;
+}
+
+.btn:hover {
+    background-color: #00acc1; /* slightly darker turquoise blue */
+    transform: scale(1.05);
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 6px 12px #00000166;
+        background-color: #70cddd; /* Slightly lighter background on hover */
+}
+
+#projects,
+#about,
+#skills,
+#contact {
+    padding: 5rem 0;
+}
+
+#projects h2,
+#about h2,
+#skills h2,
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #00bcd4; /* Turquoise Blue */
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#about .container {
+    text-align: center;
+}
+
+.project {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project h3 {
+    color: #00bcd4; /* Turquoise Blue */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.project p {
+    color: #secondary;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.project a {
+    color: #00bcd4; /* Turquoise Blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
+
+.project a:hover {
+    color: #00acc1; /* slightly darker turquoise blue */
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills ul li {
+    background-color: #2c2c2c;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    color: #dfd9ff;
+    font-weight: 400;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-weight: 300;
+}
+
+#contact i {
+    margin-right: 1rem;
+    color: #00bcd4; /* Turquoise Blue */
+}
+
+#contact a {
+    color: #00bcd4; /* Turquoise Blue */}
+
+    #skills ul li {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    #skills ul li:hover {
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        background-color: #3a3a3a;
+    }
+    
+
+    .project {
+        /* ... existing styles ... */
+        transition: transform 0.2s ease, box-shadow 0.2s ease; /* Adjusted transition speed */
+    }
+    
+    .project:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        background-color: #2c2c2c; /* Slightly lighter background on hover */
+    }
+    
+    .btn.resume { /* Style for resume buttons */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2c2c2c;
+        color: #dfd9ff;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        font-weight: 400;
+    }
+    
+    .btn.resume:hover {
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        background-color: #3a3a3a;
+    }
+    
+    .btn.resume i { /* Style for resume button icons */
+        margin-left: 0.5rem;
+    }
+
+    #contact {
+        text-align: center; /* Center the entire contact section */
+        padding: 6rem 0;
+        background-color: #1e1e1e;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        margin: 2rem auto;
+        max-width: 800px;
+    }
+    
+    #contact h2 {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        color: #00bcd4;
+        font-weight: 700;
+    }
+    
+    #contact .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally within the flex container */
+        gap: 1.5rem;
+    }
+    
+    #contact p {
+        font-size: 1.1rem;
+        color: #dfd9ff;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center text and icon horizontally within the paragraph */
+        gap: 0.75rem;
+        transition: color 0.3s ease;
+    }
+    
+    #contact p:hover {
+        color: #00acc1;
+    }
+    
+    #contact i {
+        font-size: 1.5rem;
+        color: #00bcd4;
+        transition: transform 0.2s ease;
+    }
+    
+    #contact i:hover {
+        transform: scale(1.2);
+    }
+    
+    #contact a {
+        color: #00bcd4;
+        text-decoration: none;
+        transition: color 0.3s ease, text-shadow 0.2s ease;
+    }
+    
+    #contact a:hover {
+        color: #00acc1;
+        text-shadow: 0 0 5px rgba(0, 188, 212, 0.7);
+    }
+
+    #contact {
+        text-align: center;
+        padding: 3rem 1.5rem; /* Further reduced padding */
+        background-color: #1e1e1e;
+        border-radius: 10px; /* Slightly less rounded corners */
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4); /* Slightly reduced shadow */
+        margin: 2.5rem auto; /* Slightly reduced margin */
+        max-width: 650px; /* Further reduced max-width */
+    }
+    
+    #contact h2 {
+        margin-bottom: 2rem; /* Further reduced margin below the title */
+        font-size: 2rem; /* Further slightly smaller title */
+    }
+    
+    #contact .contact-info {
+        gap: 1rem; /* Further reduced gap between contact items */
+    }
+    
+    #contact p {
+        font-size: 1rem; /* Further slightly smaller font size */
+        gap: 0.5rem; /* Further reduced gap between icon and text */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 400px;
+        margin: auto;
+        padding: 2rem;
+        background: #2c2c2c;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 2px solid #444;
+        border-radius: 5px;
+        background: #333;
+        color: #fff;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    input::placeholder, textarea::placeholder {
+        color: #aaa;
+    }
+    
+    input:focus, textarea:focus {
+        border-color: #00bcd4;
+        box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+        outline: none;
+    }
+    
+    textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+    
+    button {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        background: #00bcd4;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+    
+    button:hover {
+        background: #019aaa;
+        transform: scale(1.05);
+    }
+    
+    button:active {
+        transform: scale(1);
+    }
+    
+    @media (max-width: 500px) {
+        form {
+            width: 90%;
+            padding: 1.5rem;
+        }
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+      
+      #contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        max-width: 400px;
+        background: #f9f9f9;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      #contact input,
+      #contact textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      
+      #contact textarea {
+        height: 150px;
+        resize: none;
+      }
+      
+      #contact button {
+        background-color: #00bcd4; /* Turquoise Blue */
+        color: white;
+        border: none;
+        padding: 0.8rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      
+      #contact button:hover {
+        background-color: #008c9e;
+      }
+      
+    
